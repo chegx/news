@@ -66,6 +66,7 @@ ul {
   top: 0;
   right: -26rem;
   z-index: 1;
+  visibility: hidden;
 }
 
 li {
@@ -236,6 +237,7 @@ article.top>img {
     position: static;
     height: auto;
     width: auto;
+    visibility: visible;
   }
 
   li {
