@@ -1,9 +1,11 @@
 $(".hamburger").click(function(){
-  $("ul").css("visibility", "visible").animate({right: 0});
+  $("ul").animate({right: 0});
+  $("ul").attr("aria-hidden", "false");
   $("body").addClass("active");
 })
 
 $(".icon-close").click(function(){
-  $("ul").css("visibility", "hidden").animate({right: '-260px'});
+  $("ul").animate({right: '-260px'});
+  $("ul").attr("aria-hidden", "true");
   $("body").removeClass("active");
 })
