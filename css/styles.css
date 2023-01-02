@@ -1,7 +1,7 @@
 @font-face {
   font-family: Inter;
   src: url(../assets/fonts/Inter-VariableFont_slnt,wght.ttf);
-  font-weight: 100 1000;
+  font-weight: 400 800;
 }
 
 :root {
@@ -59,6 +59,7 @@ button {
 }
 
 ul {
+  display: none;
   list-style: none;
   width: 26rem;
   height: 100vh;
@@ -234,6 +235,7 @@ article.top>img {
   }
 
   ul {
+    display: block !important;
     position: static;
     height: auto;
     width: auto;
