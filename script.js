@@ -1,11 +1,15 @@
-$(".hamburger").click(function(){
-  $("ul").animate({right: 0});
-  $("ul").attr("aria-hidden", "false");
+$(".hamburger").click(function() {
   $("body").addClass("active");
+  $(this).toggle();
+  $("ul").show("fast").animate({
+    right: 0
+  });
 })
 
-$(".icon-close").click(function(){
-  $("ul").animate({right: '-260px'});
-  $("ul").attr("aria-hidden", "true");
+$(".icon-close").click(function() {
   $("body").removeClass("active");
+  $(".hamburger").toggle();
+  $("ul").animate({
+    right: '-260px'
+  }).hide("fast");
 })
