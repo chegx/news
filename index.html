@@ -11,31 +11,31 @@
 
 <body>
   <nav>
-    <a href="javascript:;"><img class="logo" src="assets/images/logo.svg" alt="Homepage"></a>
-    <button type="button" class="hamburger" title="Open Navigation" aria-expanded="true" aria-controls="menu"><img src="assets/images/icon-menu.svg" alt=""></button>
+    <a href="javascript:;"><img class="logo" src="assets/images/logo.svg" alt="Go to Homepage"></a>
+    <button type="button" class="hamburger" title="Open Navigation" aria-expanded="false" aria-controls="menu"><img src="assets/images/icon-menu.svg" alt=""></button>
 
-    <ul id="menu" aria-hidden="true">
-      <button type="button" class="icon-close" title="Close Navigation"><svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+    <ul id="menu">
+      <button type="button" class="icon-close" title="Close Navigation" aria-expanded="true" aria-controls="menu"><svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
           <g fill="#00001A" fill-rule="evenodd">
             <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
             <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
           </g>
         </svg></button>
 
-      <li class="home-link" role="presentation">
-        <a class="nav-link" role="menuitem" href="javascript:;">Home</a>
+      <li class="home-link">
+        <a class="nav-link" href="javascript:;">Home</a>
       </li>
-      <li role="presentation">
-        <a class="nav-link" role="menuitem" href="javascript:;">New</a>
+      <li>
+        <a class="nav-link" href="javascript:;">New</a>
       </li>
-      <li role="presentation">
-        <a class="nav-link" role="menuitem" href="javascript:;">Popular</a>
+      <li>
+        <a class="nav-link" href="javascript:;">Popular</a>
       </li>
-      <li role="presentation">
-        <a class="nav-link" role="menuitem" href="javascript:;">Trending</a>
+      <li>
+        <a class="nav-link" href="javascript:;">Trending</a>
       </li>
-      <li role="presentation">
-        <a class="nav-link" role="menuitem" href="javascript:;">Categories</a>
+      <li>
+        <a class="nav-link" href="javascript:;">Categories</a>
       </li>
     </ul>
   </nav>
@@ -99,7 +99,7 @@
   <div class="overlay"></div>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="script.js" charset="utf-8"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
