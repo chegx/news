@@ -6,10 +6,15 @@ $(".hamburger").click(function() {
   });
 })
 
-$(".icon-close").click(function() {
+$(".icon-close").click(closeMenu);
+
+$(".overlay").click(closeMenu);
+
+function closeMenu(){
   $("body").removeClass("active");
   $("button").toggle();
   $("ul").animate({
     right: '-260px'
   }).hide("fast");
-})
+}
+
