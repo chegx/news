@@ -1,6 +1,6 @@
 $(".hamburger").click(function() {
   $("body").addClass("active");
-  $(this).toggle();
+  $("button").toggle();
   $("ul").show("fast").animate({
     right: 0
   });
@@ -8,7 +8,7 @@ $(".hamburger").click(function() {
 
 $(".icon-close").click(function() {
   $("body").removeClass("active");
-  $(".hamburger").toggle();
+  $("button").toggle();
   $("ul").animate({
     right: '-260px'
   }).hide("fast");
