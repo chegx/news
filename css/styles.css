@@ -71,6 +71,7 @@ ul {
   top: 0;
   right: -26rem;
   z-index: 1;
+  overflow: scroll; 
 }
 
 li {
@@ -214,6 +215,10 @@ article.top>img {
     height: 100%;
     top: 0;
     left: 0;
+  }
+    body.active {           
+    height: 100vh;
+    overflow-y: hidden;
   }
 }
 
